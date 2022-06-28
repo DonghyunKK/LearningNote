@@ -25,7 +25,7 @@
 
   Most of the time loop in algorithm, time complexity is at least Linear O(n)
 
-  nested loop time complexity :  O(n2) - quadratic
+  nested loop time complexity :  O(n^2) - quadratic
 
   input size reduces by half of every iteration : O(logn) - Logarithmic
 
@@ -58,4 +58,4 @@
   shift / unshift / concat / slice / splice - O(n)
   forEach / map / filter / reduce - O(n)
 
-/*
+*/
