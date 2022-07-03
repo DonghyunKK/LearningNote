@@ -35,4 +35,25 @@ function recursiveFactorial(n){
 
 Big O = O(n)
 
+
+* Recursive binary search
+
+function recursiveBinarySearch(arr, target, leftIndex, rightIndex){
+  if(leftIndex > rightIndex){
+    return -1
+  }
+
+  let middle = Math.floor((leftIndex + rightIndex) / 2);
+  if(target === middle) {
+    return middle
+  }
+
+  if(target < arr[middle]){
+    return recursiveBinarySearch(arr, target, leftIndex, middle - 1)
+  } else {
+    return recursiveBinarySearch(arr, target, middle + 1, rightIndex)
+  }
+}
+
+Big O = O(logn)
 */
