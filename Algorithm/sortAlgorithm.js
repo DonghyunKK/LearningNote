@@ -25,6 +25,20 @@ function bubbleSotr(arr){
   } while (swapped)
 }
 
+function bubbleSotr(arr){
+  for(let i = 0; i < arr.length - 1; i++){
+    let temp
+    for(let j = 0; j < arr.length - i - 1; j++){
+      if(arr[j] > arr[j+1]){
+        temp = arr[j];
+        arr[j] = arr[j+1];
+        arr[j+1] = temp
+      }
+    }
+  }
+  return arr
+}
+
 Big O = O(n^2);
 
 
